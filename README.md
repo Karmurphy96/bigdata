@@ -1,38 +1,48 @@
 **End-to-End Big Data Pipeline**
-This project was developed as part of the MSc Data Analytics (Big Data Analytics module) at the Berlin School of Business & Innovation.
-It demonstrates the design and implementation of an end-to-end Big Data pipeline using Hadoop, Spark, Hive, and MLlib on the Amazon Reviews Dataset (>5GB).
 
-**Project Overview**
-The goal of this project was to build a scalable data pipeline that can ingest, process, and analyze large-scale datasets, followed by applying machine learning for sentiment classification.
+This repository contains the implementation of my MSc Data Analytics – Big Data Analytics module project. The project demonstrates the development of an end-to-end Big Data pipeline using Hadoop, Spark, Hive, and MLlib on the Amazon Reviews Dataset (>5GB).
+
+Project Overview
+
+1. The goal of this project was to design and implement a scalable data pipeline that can:
+
+2. Ingest and store raw data.
+
+3. Process and transform data using Spark & Hive.
+
+4. Apply machine learning with MLlib for sentiment classification.
+
+5. Compare performance between Spark and Hive.
 
 **Key Features**
 **Data Ingestion & Storage**
 
-Converted raw JSONL files to CSV format.
+1. Converted raw JSONL files to CSV format.
 
-Stored and managed data in HDFS-compatible storage.
+2. Stored and managed data in HDFS-compatible storage.
 
-Created Hive external tables for structured access.
+3. Created Hive external tables for structured access.
 
 **Data Processing**
 
-Applied ETL with PySpark for cleaning, wrangling, and transformations.
+1. Applied ETL with PySpark for cleaning, wrangling, and transformations.
 
-Ran HiveQL queries for exploratory data analysis and performance benchmarking against Spark SQL.
+2. Ran HiveQL queries for exploratory data analysis and performance benchmarking against Spark SQL.
 
 **Machine Learning**
 
-Implemented Logistic Regression (MLlib) for sentiment classification.
+1. Implemented Logistic Regression (MLlib) for sentiment classification.
 
-Evaluated using Accuracy, Precision, Recall, F1-score, and ROC-AUC.
+2. Evaluated using Accuracy, Precision, Recall, F1-score, and ROC-AUC.
 
-Visualized results with a Confusion Matrix.
+3. Visualized results with a Confusion Matrix.
 
 **Performance Comparison**
 
 Benchmarked Spark vs Hive for specific query and transformation tasks.
 
 **Technologies Used**
+
 Hadoop (HDFS)
 
 Apache Spark (PySpark, MLlib)
@@ -42,3 +52,13 @@ Apache Hive
 Python
 
 Google Cloud Dataproc / GCS (for deployment)
+
+**Results**
+
+Built a fully functional pipeline that processed 5GB+ of Amazon Review data.
+
+Achieved strong classification results (e.g., ROC-AUC > 0.80).
+
+Reduced query execution time by leveraging Spark optimizations over Hive.
+
+
